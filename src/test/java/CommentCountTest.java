@@ -19,27 +19,46 @@ public class CommentCountTest {
     @Test
 
     public void CommentCountCheck () {
+        //nazvanije funkcii
+        //public iz za junit , kot. vne klassa
+        //void- test ne vozvrashajet
+
 
         System.setProperty("webdriver.chrome.driver", "c:/chromedriver.exe");
+        // This method returns the System property's previous value(key, value)
         WebDriver driver = new ChromeDriver();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
         driver.get(URL);
 
+        //ishem statju celikom=text+commentarii
         List<WebElement> articles = driver.findElements(ARTICLE);
         //articles v mnozhestvennom chisle iz-za List
 
         Article article = getArticle(articles, 5);
-    }
+        //funkpcija private -prinimajet spisok so statjami(packahge model pokazivajetsja jv spiske )
+        // article - novoje nazvanije funkcii
+        //MAPPING -> mapitsja odin object na drugoj-> webelement so statjej nuzhno zamapitj na objekt article
+        //??nazvanija funkcij
 
+    }
+//menjajetsja posledovateljnostj:shag 1
     private Article getArticle(List<WebElement> elements, int i) {
         //Article -object
-        //PERVIJ ELEMENT=NULEVOJ
-        WebElement article = elements.get(i);
+        //PERVIJ ELEMENT=NULEVOJ //funkpcija private -prinimajet spisok so statjami(packahge model pokazivajetsja jv spiske )
+        // article - novoje nazvanije funkcii
+        // MAPPING -> mapitsja odin object na drugoj-> webelement so statjej nuzhno zamapitj na objekt article
+        //??nazvanija funkcij
+        //berjem webelement razdeljajem na : title i comment count(tetradj)
+        //berjetsja object, t.k. sobjektami rabotatj legche
+
+        //shag 2
+        WebElement article = elements.get(i);//mozhno postavitj zdes BREAk POINT
 
 
-        //rabotajut s kopijej objecta  - SOZDAJEM KOPIJU OBJEKTA
+
+        //shag 3 : rabotajut s kopijej objecta  - SOZDAJEM KOPIJU OBJEKTA
         Article currentArticle = new Article();
         currentArticle.setTitle(article.findElement(TITLE).getText());
 

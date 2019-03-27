@@ -9,8 +9,9 @@ public class NewProjejct {
     public void newProjejct() {
 
         System.setProperty("webdriver.chrome.driver", "c:/chromedriver.exe");
-        driver.get("http://delfi.lv");
         WebDriver driver = new ChromeDriver();
+        driver.get("http://delfi.lv");
+
         driver.manage().window().maximize();
 
 

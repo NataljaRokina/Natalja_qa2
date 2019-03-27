@@ -21,7 +21,8 @@ public class Article {
     }
 
     public void setCommentCount(String commentCount) {
-        commentCount = commentCount.substring(1, commentCount.length() - 1);
+        commentCount = commentCount.substring(1, commentCount.length() - 1);// v skobkah '1' potomu chto pervaja ckobka
+        //eto nulevoj simvol, kotorim javljajetsja skobka u elementa commentCount
         this.commentCount = Integer.valueOf(commentCount);
     }
 }
