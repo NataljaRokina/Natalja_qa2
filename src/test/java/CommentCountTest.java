@@ -36,6 +36,7 @@ public class CommentCountTest {
         List<WebElement> articles = driver.findElements(ARTICLE);
         //articles v mnozhestvennom chisle iz-za List
 
+        //shag 2
         Article article = getArticle(articles, 5);
         //funkpcija private -prinimajet spisok so statjami(packahge model pokazivajetsja jv spiske )
         // article - novoje nazvanije funkcii

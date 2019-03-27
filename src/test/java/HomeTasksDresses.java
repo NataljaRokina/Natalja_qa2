@@ -1,3 +1,4 @@
+import model.TabDresses;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -24,14 +25,16 @@ public class HomeTasksDresses {
 
         //1 Find first article title
         //WebElement dressesButton = driver.findElement(DRESSES);
-        List<WebElement> articles = driver.findElements(DRESSES);
+        List<WebElement> dresses = driver.findElements(DRESSES);
+
+        private TabDresses   //TabDresses getArticle(List<WebElement> elements, int i) {
 
 
         //Save to String
-        String dressesTxt = driver.findElement(DRESSES).getText();
+        //String dressesTxt = driver.findElement(DRESSES).getText();//peresmotretj
 
         //Click on article
-        driver.findElement(DRESSES).click();
+        //driver.findElement(DRESSES).click();
 
         //WebElement
 
