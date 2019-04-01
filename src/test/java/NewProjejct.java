@@ -11,7 +11,6 @@ public class NewProjejct {
         System.setProperty("webdriver.chrome.driver", "c:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://delfi.lv");
-
         driver.manage().window().maximize();
 
 
