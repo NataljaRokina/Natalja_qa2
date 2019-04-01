@@ -9,7 +9,8 @@ public class Article {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.title = title;//  esli 2 odinakovije peremennije, odna na urovne klassa, drugaja na urovne funkcii
+        // -> this zdes na urovne klassa opredeljajet
     }
 
     public Integer getCommentCount() {
