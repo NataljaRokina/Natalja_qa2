@@ -15,7 +15,7 @@ public class PageObjectTest {
     public void delfiTest() {
         baseFunc.goToUrl(URL);
         HomePage homePage = new HomePage(baseFunc);//propisan zdes t.k. poka nuzhna tolko v odnom meste
-        homePage.openArticleByIndex(5);
+        //homePage.openArticleByIndex(5);
 
 
     }

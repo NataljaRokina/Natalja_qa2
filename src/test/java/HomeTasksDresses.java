@@ -39,15 +39,19 @@ public class HomeTasksDresses {
         //WebElement
 
 
+        //ALLTABS alltabs1=getClass(alltabs)
+
+
     }
+}
 
     //private TabDresses   //TabDresses getArticle(List<WebElement> elements, int i) {
 
-
+/*
     @AfterEach
     public void closeBrowser()
     {
     closeBrowser();
     }
+*/
 
-}
